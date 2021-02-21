@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  background-color: white;
+  display: block;
+  font-family: 'Chonburi', sans-serif;
+  font-size: 9px;
+  text-align: center;
+}
+
+#title {
+  margin: 20px 0;
+  font-size: 3.5em;
+  letter-spacing: 2px;
+  line-height: 1em;
+}
+.no {
+  color: salmon;
+}
+.yes {
+  color: DarkSlateBlue;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1em;
+  border: 1px solid black;
+  background-color: white;
+}
+.button:nth-child(1) { 
+  border-color: salmon;
+  color: salmon;
+}
+.button:nth-child(2) { 
+  border-color: DarkSlateBlue;
+  color: DarkSlateBlue;
+}
+.button.highlighted, .button:hover {
+  color: white;
+  cursor: pointer;
+}
+.button.highlighted:nth-child(1), .button:hover:nth-child(1) { 
+  background-color: salmon;
+}
+.button.highlighted:nth-child(2), .button:hover:nth-child(2) { 
+  background-color: DarkSlateBlue;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}

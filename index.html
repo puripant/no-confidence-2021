@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- for Google -->
+  <meta name="description" content="Motion of No Confidence in Thailand 2021" />
+  <meta name="keywords" content="visualization, chart, politics, thailand, d3, no confidence, ไม่ไว้วางใจ, การเมือง" />
+  <meta name="author" content="Puripant Ruchikachorn" />
+
+  <!-- for Facebook -->
+  <meta property="og:title" content="Motion of No Confidence in Thailand 2021" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://puripant.ruchikachorn.com/no-confidence-2021/thumbnail.png" />
+  <meta property="og:url" content="http://puripant.ruchikachorn.com/no-confidence-2021/" />
+  <meta property="og:description" content="The voting result of motion of no confidence (อภิปรายไม่ไว้วางใจ) in Thailand 2021" />
+
+  <!-- for Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Motion of No Confidence in Thailand 2021" />
+  <meta name="twitter:description" content="The voting result of motion of no confidence (อภิปรายไม่ไว้วางใจ) in Thailand 2021" />
+  <meta name="twitter:image" content="http://puripant.ruchikachorn.com/no-confidence-2021/thumbnail.png" />
+
+  <title>Motion of No Confidence in Thailand 2021</title>
+  <link href="main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Chonburi" rel="stylesheet">
+</head>
+
+<body>
+  <div id=title><span class="no">NO</span>&#8203;<span class="yes">CONFIDENCE</span>&#8203;2021</div>
+  <div class="buttons">
+    <div id="button-no" class="button noselect highlighted" onclick="sort('ไม่ไว้วางใจ')">Sort by NO</div>
+    <div id="button-yes" class="button noselect" onclick="sort('ไว้วางใจ')">Sort by YES</div>
+  </div>
+  <div id="chart">
+  </div>
+  
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
