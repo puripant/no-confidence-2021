@@ -20,6 +20,10 @@ body {
   color: DarkSlateBlue;
 }
 
+.image {
+  cursor: pointer;
+}
+
 .button {
   display: inline-block;
   padding: 0.5em;
@@ -28,23 +32,35 @@ body {
   border: 1px solid black;
   background-color: white;
 }
-.button:nth-child(1) { 
+.button#button-no { 
   border-color: salmon;
   color: salmon;
 }
-.button:nth-child(2) { 
+.button#button-yes { 
   border-color: DarkSlateBlue;
   color: DarkSlateBlue;
 }
-.button.highlighted, .button:hover {
-  color: white;
+.button#button-order { 
+  border-color: black;
+  color: black;
+}
+.button:hover {
   cursor: pointer;
 }
-.button.highlighted:nth-child(1), .button:hover:nth-child(1) { 
-  background-color: salmon;
+.button.highlighted:hover {
+  cursor: default;
 }
-.button.highlighted:nth-child(2), .button:hover:nth-child(2) { 
+.button.highlighted#button-no, .button:hover#button-no { 
+  background-color: salmon;
+  color: white;
+}
+.button.highlighted#button-yes, .button:hover#button-yes { 
   background-color: DarkSlateBlue;
+  color: white;
+}
+.button.highlighted#button-order, .button:hover#button-order { 
+  background-color: black;
+  color: white;
 }
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */

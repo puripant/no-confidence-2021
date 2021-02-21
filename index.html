@@ -29,11 +29,11 @@
 <body>
   <div id=title><span class="no">NO</span>&#8203;<span class="yes">CONFIDENCE</span>&#8203;2021</div>
   <div class="buttons">
-    <div id="button-no" class="button noselect highlighted" onclick="sort('ไม่ไว้วางใจ')">Sort by NO</div>
-    <div id="button-yes" class="button noselect" onclick="sort('ไว้วางใจ')">Sort by YES</div>
+    <div id="button-no" class="button noselect" onclick="sort('ไม่ไว้วางใจ')">เรียงตามคะแนนไม่ไว้วางใจ</div>
+    <div id="button-yes" class="button noselect" onclick="sort('ไว้วางใจ')">เรียงตามคะแนนไว้วางใจ</div>
+    <div id="button-order" class="button noselect highlighted" onclick="sort('order')">เรียงตามนายกฯ ลงไป</div>
   </div>
-  <div id="chart">
-  </div>
+  <div id="chart"></div>
   
   <script src="https://d3js.org/d3.v6.min.js"></script>
   <script src="main.js"></script>
